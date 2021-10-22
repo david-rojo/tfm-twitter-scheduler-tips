@@ -1,5 +1,12 @@
 # Twitter Scheduler TFM tips
 
+## Spring Boot Actuator
+
+Spring Boot Actuator is enabled in the project
+
+[Details](doc/spring-boot-actuator.md)
+
+
 ## Twitter
 
 - [Twitter developer platform: tools and libraries](https://developer.twitter.com/en/docs/twitter-api/tools-and-libraries)
