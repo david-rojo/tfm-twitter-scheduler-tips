@@ -1,4 +1,4 @@
-# Dockehub token generation
+# Dockerhub token generation
 
 [https://docs.docker.com/docker-hub/access-tokens/](https://docs.docker.com/docker-hub/access-tokens/)
 
