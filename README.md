@@ -17,4 +17,5 @@ Spring Boot Actuator is enabled in the project
 
 - [Deploy to Heroku](https://github.com/marketplace/actions/deploy-to-heroku)
 - [Deploying to Heroku from GitHub Actions](https://dev.to/heroku/deploying-to-heroku-from-github-actions-29ej)
+- [SpringBoot with GitHub Actions and Heroku](https://github.com/gcatanese/SpringBootService)
 - [Go on Heroku: Continuous Deployment with GitHub](https://www.youtube.com/watch?v=sffWuu7XBN4)
