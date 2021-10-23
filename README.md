@@ -1,5 +1,7 @@
 # Twitter Scheduler TFM tips
 
+Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info](https://twitter-scheduler-tfm.herokuapp.com/actuator/info)
+
 ## Spring Boot Actuator
 
 Spring Boot Actuator is enabled in the project
@@ -18,4 +20,6 @@ Spring Boot Actuator is enabled in the project
 - [Deploy to Heroku](https://github.com/marketplace/actions/deploy-to-heroku)
 - [Deploying to Heroku from GitHub Actions](https://dev.to/heroku/deploying-to-heroku-from-github-actions-29ej)
 - [SpringBoot with GitHub Actions and Heroku](https://github.com/gcatanese/SpringBootService)
+- [StackOverflow: Deploying Spring boot App, to Heroku With Docker using github](https://stackoverflow.com/questions/66259266/deploying-spring-boot-app-to-heroku-with-docker-using-github)
 - [Go on Heroku: Continuous Deployment with GitHub](https://www.youtube.com/watch?v=sffWuu7XBN4)
+
