@@ -2,6 +2,10 @@
 
 Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info](https://twitter-scheduler-tfm.herokuapp.com/actuator/info)
 
+## Meetings
+
+- [22/07/2021: Kickoff](doc/meetings/22072021.md)
+
 ## Spring Boot Actuator
 
 Spring Boot Actuator is enabled in the project
@@ -22,4 +26,3 @@ Spring Boot Actuator is enabled in the project
 - [SpringBoot with GitHub Actions and Heroku](https://github.com/gcatanese/SpringBootService)
 - [StackOverflow: Deploying Spring boot App, to Heroku With Docker using github](https://stackoverflow.com/questions/66259266/deploying-spring-boot-app-to-heroku-with-docker-using-github)
 - [Go on Heroku: Continuous Deployment with GitHub](https://www.youtube.com/watch?v=sffWuu7XBN4)
-
