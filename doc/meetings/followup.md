@@ -1,4 +1,4 @@
-# Follow up
+# 10/2021: Follow up
 
 ## Progress
 
@@ -29,3 +29,4 @@
   - Domain
   - Database
   - REST API endpoints
+- Next follow up?
