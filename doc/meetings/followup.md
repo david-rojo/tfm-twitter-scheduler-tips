@@ -7,7 +7,7 @@
 - CI/CD ready [GitHub actions workflow](https://github.com/MasterCloudApps-Projects/TwitterScheduler/actions) on every push on main branch:
   - unit tests executed
   - docker image built and published in DockerHub
-  - heroku build and deployed
+  - heroku image built and deployed
 - [Heroku app info endpoint](https://twitter-scheduler-tfm.herokuapp.com/actuator/info)
 - Twitter account: [@BlueOcean_TFM](https://twitter.com/BlueOcean_TFM)
 - Twitter API:
