@@ -8,6 +8,7 @@
 
 | VERB   	| PATH                           	| ERRORS                                                       	|
 |--------	|--------------------------------	|--------------------------------------------------------------	|
+| GET    	| /                              	|                                                              	|
 | GET    	| /pending                       	|                                                              	|
 | GET    	| /pending/{id}                  	| NOT_FOUND                                                    	|
 | GET    	| /pending/{startDate}/{endDate} 	| END_DATE_EARLIER_THAN_START_DATE                             	|
@@ -18,4 +19,4 @@
 | GET    	| /tweet/{id}                    	| NOT_FOUND                                                    	|
 | GET    	| /tweet/{startDate}/{endDate}   	| END_DATE_EARLIER_THAN_START_DATE                             	|
 | GET    	| /actuator/info                 	|                                                              	|
-| GET    	| /actuator/info                 	|                                                              	|
+| GET    	| /actuator/health               	|                                                              	|
