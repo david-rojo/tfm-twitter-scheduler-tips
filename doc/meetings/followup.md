@@ -9,9 +9,9 @@
   - docker image built and published in DockerHub
   - heroku build and deployed
 - [Heroku app info endpoint](https://twitter-scheduler-tfm.herokuapp.com/actuator/info)
+- Twitter account: [@BlueOcean_TFM](https://twitter.com/BlueOcean_TFM)
 - Twitter API registration
 - Twitter API PoC: [twitter-publisher](https://github.com/david-rojo/twitter-publisher)
-- Twitter account: [@BlueOcean_TFM](https://twitter.com/BlueOcean_TFM)
 - [Project logo](http://davidrojo.eu/images/tfm/1.jpg)
 
 ## Questions
