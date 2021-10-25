@@ -4,14 +4,15 @@
 
 - Created Spring Boot maven project structure in [repository](https://github.com/MasterCloudApps-Projects/TwitterScheduler) with Spring Boot Actuator enabled
 - [DockerHub repository](https://hub.docker.com/repository/docker/drojo/twitter-scheduler-tfm)
-- GitHub actions workflow [ready](https://github.com/MasterCloudApps-Projects/TwitterScheduler/actions): every push on main branch:
+- CI/CD ready [GitHub actions workflow](https://github.com/MasterCloudApps-Projects/TwitterScheduler/actions) on every push on main branch:
   - unit tests executed
   - docker image built and published in DockerHub
   - heroku build and deployed
 - [Heroku app info endpoint](https://twitter-scheduler-tfm.herokuapp.com/actuator/info)
 - Twitter account: [@BlueOcean_TFM](https://twitter.com/BlueOcean_TFM)
-- Twitter API registration
-- Twitter API PoC: [twitter-publisher](https://github.com/david-rojo/twitter-publisher)
+- Twitter API:
+  - registration
+  - PoC: [twitter-publisher](https://github.com/david-rojo/twitter-publisher)
 - [Project logo](http://davidrojo.eu/images/tfm/1.jpg)
 
 ## Questions
