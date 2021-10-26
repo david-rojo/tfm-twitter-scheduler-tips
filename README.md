@@ -4,8 +4,8 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 
 ## Meetings
 
-- [22/07/2021: Kickoff](doc/meetings/22072021.md)
-- [10/2021: Follow Up](doc/meetings/followup.md)
+- [22/07/2021: Kickoff](doc/meetings/22072021-kickoff.md)
+- [10/2021: Follow Up](doc/meetings/29102021-followup.md)
 
 ## Project documentation
 
@@ -34,8 +34,15 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 - [Deploy to Heroku](https://github.com/marketplace/actions/deploy-to-heroku)
 - [Deploying to Heroku from GitHub Actions](https://dev.to/heroku/deploying-to-heroku-from-github-actions-29ej)
 - [SpringBoot with GitHub Actions and Heroku](https://github.com/gcatanese/SpringBootService)
+- [Getting Started on Heroku with Java](https://devcenter.heroku.com/articles/getting-started-with-java)
 - [StackOverflow: Deploying Spring boot App, to Heroku With Docker using github](https://stackoverflow.com/questions/66259266/deploying-spring-boot-app-to-heroku-with-docker-using-github)
 - [Go on Heroku: Continuous Deployment with GitHub](https://www.youtube.com/watch?v=sffWuu7XBN4)
+
+## Heroku env vars
+
+- [heroku container:push](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-container-push)
+- [Docker env vars + Heroku; Heroku requires ENV while local build requires ARG](https://stackoverflow.com/questions/49476481/docker-env-vars-heroku-heroku-requires-env-while-local-build-requires-arg)
+- [Custom GitHub action heroku-deploy](https://github.com/AkhileshNS/heroku-deploy)
 
 ## Misc
 
