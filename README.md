@@ -11,12 +11,17 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 
  - [Design proposal](doc/design/design.md)
 
-## Spring Boot Actuator
+## OpenApi
 
-Spring Boot Actuator is enabled in the project
+- [SpringDoc-OpenApi v1.5.12 official doc](https://springdoc.org/)
+- [OpenApi securization](doc/openapi/openapi-securization.md)
+- [Baeldung: How to Turn Off Swagger-ui in Production](https://www.baeldung.com/swagger-ui-turn-off-in-production)
+- [Sort endpoints alphabetically](https://springdoc.org/index.html#how-can-i-sort-endpoints-alphabetically)
 
-[Details](doc/spring-boot-actuator.md)
+## Spring Boot
 
+- [Spring Boot Actuator is enabled in the project](doc/springboot/spring-boot-actuator.md)
+- [GitHub secret usage as property in Java code](doc/springboot/github-secret-usage-as-property.md)
 
 ## Twitter
 

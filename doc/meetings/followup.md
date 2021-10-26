@@ -8,7 +8,11 @@
   - unit tests executed
   - docker image built and published in DockerHub
   - heroku image built and deployed
-- [Heroku app info endpoint](https://twitter-scheduler-tfm.herokuapp.com/actuator/info)
+- Heroku app:
+    - [index](https://twitter-scheduler-tfm.herokuapp.com/)
+    - [OpenAPI](https://twitter-scheduler-tfm.herokuapp.com/twitter-scheduler-api.html)
+    - [Actuator info](https://twitter-scheduler-tfm.herokuapp.com/actuator/info)
+    - [Actuator health](https://twitter-scheduler-tfm.herokuapp.com/actuator/health)
 - Twitter account: [@BlueOcean_TFM](https://twitter.com/BlueOcean_TFM)
 - Twitter API:
   - registration
@@ -25,6 +29,7 @@
   oauth.accessToken=<access_token>
   oauth.accessTokenSecret=<access_token_secret>
 ```
+[stackoverflow answer](../springboot/github-secret-usage-as-property.md)
 - [Design proposal](../design/design.md):
   - Domain
   - Database
