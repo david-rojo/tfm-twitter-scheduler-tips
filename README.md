@@ -26,6 +26,7 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 ## Twitter
 
 - [Twitter developer platform: tools and libraries](https://developer.twitter.com/en/docs/twitter-api/tools-and-libraries)
+- [Baeldung: Introduction to TwitterJ](https://www.baeldung.com/twitter4j)
 - [How to post image tweets to Twitter using Twitter4j Java API](https://roytuts.com/how-to-post-image-tweets-to-twitter-using-twitter4j-java-api/)
 - [Twitter4J](https://github.com/Twitter4J/Twitter4J)
 
