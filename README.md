@@ -23,6 +23,13 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 - [Spring Boot Actuator is enabled in the project](doc/springboot/spring-boot-actuator.md)
 - [GitHub secret usage as property in Java code](doc/springboot/github-secret-usage-as-property.md)
 
+## Scheduled
+
+- [Spring.io: Scheduling Tasks](https://spring.io/guides/gs/scheduling-tasks/)
+- [Baeldung: The @Scheduled Annotation in Spring](https://www.baeldung.com/spring-scheduled-tasks)
+- [Baeldung: Conditionally Enable Scheduled Jobs in Spring](https://www.baeldung.com/spring-scheduled-enabled-conditionally)
+- [Baeldung: parametrizing the Schedule](https://www.baeldung.com/spring-scheduled-tasks#parameterizing-the-schedule)
+
 ## Twitter
 
 - [Twitter developer platform: tools and libraries](https://developer.twitter.com/en/docs/twitter-api/tools-and-libraries)
