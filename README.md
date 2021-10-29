@@ -25,10 +25,12 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 
 ## Scheduled
 
-- [Spring.io: Scheduling Tasks](https://spring.io/guides/gs/scheduling-tasks/)
-- [Baeldung: The @Scheduled Annotation in Spring](https://www.baeldung.com/spring-scheduled-tasks)
-- [Baeldung: Conditionally Enable Scheduled Jobs in Spring](https://www.baeldung.com/spring-scheduled-enabled-conditionally)
-- [Baeldung: parametrizing the Schedule](https://www.baeldung.com/spring-scheduled-tasks#parameterizing-the-schedule)
+- [Spring scheduled tasks](doc/springboot/scheduled-tasks.md)
+
+## Feature Flags
+
+- [FF4J main page](https://ff4j.github.io/)
+- [GitHub FF4J examples](https://github.com/ff4j/ff4j-samples)
 
 ## Twitter
 
