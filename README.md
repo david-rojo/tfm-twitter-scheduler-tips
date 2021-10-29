@@ -4,8 +4,9 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 
 ## Meetings
 
-- [22/07/2021: Kickoff](doc/meetings/22072021-kickoff.md)
-- [29/10/2021: Follow Up](doc/meetings/29102021-followup.md)
+- [22/07/2021: Kickoff](doc/meetings/20210722-kickoff.md)
+- [29/10/2021: Follow Up](doc/meetings/20211029-followup.md)
+- [11/2021: Follow up](doc/meetings/202111-followup.md)
 
 ## Project documentation
 
@@ -29,8 +30,20 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 
 ## Feature Flags
 
+## Togglz
+
+- [togglz](doc/springboot/togglz.md)
+- [togglz spring boot starter](https://www.togglz.org/documentation/spring-boot-starter.html)
+- [authentication](https://www.togglz.org/documentation/authentication.html)
+- [configuration](https://www.togglz.org/documentation/configuration.html)
+- [StackOverflow: Spring Boot Togglz - no qualifying bean of type UserProvider error](https://stackoverflow.com/questions/41263339/spring-boot-togglz-no-qualifying-bean-of-type-userprovider-error)
+- [StackOverflow: How to enable togglz-console in spring-boot application](https://stackoverflow.com/questions/36352832/how-to-enable-togglz-console-in-spring-boot-application)
+
+### FFJ4
+
 - [FF4J main page](https://ff4j.github.io/)
 - [GitHub FF4J examples](https://github.com/ff4j/ff4j-samples)
+
 
 ## Twitter
 
