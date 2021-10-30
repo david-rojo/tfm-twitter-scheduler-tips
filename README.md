@@ -71,6 +71,11 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 
 - [How to set up a free PostgreSQL database on Heroku](https://dev.to/prisma/how-to-setup-a-free-postgresql-database-on-heroku-1dc1)
 
+## Coverage
+
+ - [Jacoco configuration in the project](docs/springboot/jacoco.md)
+ - [GitHub Actions CI pipeline: GitHub Packages, Codecov, release to Maven Central & GitHub](https://blog.codecentric.de/en/2021/02/github-actions-pipeline/)
+
 ## Misc
 
 - [How to Add an Image to Github for a Project's Social Media Preview](doc/misc/github-add-image-social-media-preview.md)
