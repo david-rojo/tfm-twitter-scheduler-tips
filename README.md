@@ -67,6 +67,10 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 - [Docker env vars + Heroku; Heroku requires ENV while local build requires ARG](https://stackoverflow.com/questions/49476481/docker-env-vars-heroku-heroku-requires-env-while-local-build-requires-arg)
 - [Custom GitHub action heroku-deploy](https://github.com/AkhileshNS/heroku-deploy)
 
+## Heroku DB
+
+- [How to set up a free PostgreSQL database on Heroku](https://dev.to/prisma/how-to-setup-a-free-postgresql-database-on-heroku-1dc1)
+
 ## Misc
 
 - [How to Add an Image to Github for a Project's Social Media Preview](doc/misc/github-add-image-social-media-preview.md)
