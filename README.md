@@ -41,7 +41,7 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 
 ## Feature Flags
 
-## Togglz
+### Togglz
 
 - [togglz](doc/springboot/togglz.md)
 - [togglz spring boot starter](https://www.togglz.org/documentation/spring-boot-starter.html)
