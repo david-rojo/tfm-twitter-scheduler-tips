@@ -19,10 +19,21 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 - [Baeldung: How to Turn Off Swagger-ui in Production](https://www.baeldung.com/swagger-ui-turn-off-in-production)
 - [Sort endpoints alphabetically](https://springdoc.org/index.html#how-can-i-sort-endpoints-alphabetically)
 
+## Hexagonal
+
+- [Baeldung: Organizing Layers Using Hexagonal Architecture, DDD, and Spring](https://www.baeldung.com/hexagonal-architecture-ddd-spring)
+- [Hands-on Hexagonal Architecture With Spring Boot](https://medium.com/javarevisited/hands-on-hexagonal-architecture-with-spring-boot-ca61f88bed8b)
+- [Hexagonal Architecture with Java and Spring](https://reflectoring.io/spring-hexagonal/)
+
 ## Spring Boot
 
 - [Spring Boot Actuator is enabled in the project](doc/springboot/spring-boot-actuator.md)
 - [GitHub secret usage as property in Java code](doc/springboot/github-secret-usage-as-property.md)
+
+## Resilience
+
+- [Baeldung: Guide to Try in Vavr](https://www.baeldung.com/vavr-try)
+- [Resilience4j](https://github.com/resilience4j/resilience4j)
 
 ## Scheduled
 
