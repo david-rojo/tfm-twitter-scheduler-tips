@@ -24,6 +24,7 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 - [Baeldung: Organizing Layers Using Hexagonal Architecture, DDD, and Spring](https://www.baeldung.com/hexagonal-architecture-ddd-spring)
 - [Hands-on Hexagonal Architecture With Spring Boot](https://medium.com/javarevisited/hands-on-hexagonal-architecture-with-spring-boot-ca61f88bed8b)
 - [Hexagonal Architecture with Java and Spring](https://reflectoring.io/spring-hexagonal/)
+- [https://vaadin.com/learn/tutorials/ddd/ddd_and_hexagonal](https://vaadin.com/learn/tutorials/ddd/ddd_and_hexagonal) --> domain exceptions
 
 ## Spring Boot
 
