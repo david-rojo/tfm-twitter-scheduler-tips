@@ -23,13 +23,18 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 
 - [Baeldung: Organizing Layers Using Hexagonal Architecture, DDD, and Spring](https://www.baeldung.com/hexagonal-architecture-ddd-spring)
 - [Hands-on Hexagonal Architecture With Spring Boot](https://medium.com/javarevisited/hands-on-hexagonal-architecture-with-spring-boot-ca61f88bed8b)
-- [Hexagonal Architecture with Java and Spring](https://reflectoring.io/spring-hexagonal/)
+- *[Hexagonal Architecture with Java and Spring](https://reflectoring.io/spring-hexagonal/)
 - [Domain-Driven Design and the Hexagonal Architecture](https://vaadin.com/learn/tutorials/ddd/ddd_and_hexagonal) --> domain exceptions
 
 ## Spring Boot
 
 - [Spring Boot Actuator is enabled in the project](doc/springboot/spring-boot-actuator.md)
 - [GitHub secret usage as property in Java code](doc/springboot/github-secret-usage-as-property.md)
+
+## H2 database
+
+- [Baeldung: Spring Boot With H2 Database](https://www.baeldung.com/spring-boot-h2-database)
+- [Add H2 Database to Spring Boot Project with Spring Security](https://www.appsdeveloperblog.com/add-h2-database-to-spring-boot-project-with-spring-security/)
 
 ## Resilience
 
@@ -55,7 +60,6 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 
 - [FF4J main page](https://ff4j.github.io/)
 - [GitHub FF4J examples](https://github.com/ff4j/ff4j-samples)
-
 
 ## Twitter
 
