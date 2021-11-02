@@ -12,10 +12,6 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 
  - [Design proposal](doc/design/design.md)
 
-## Next steps
-
-- Include Smoke Tests (test that check that application has been deployed properly), instead of checking it manually
-
 ## OpenApi
 
 - [SpringDoc-OpenApi v1.5.12 official doc](https://springdoc.org/)
@@ -90,6 +86,14 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 ## Heroku DB
 
 - [How to set up a free PostgreSQL database on Heroku](https://dev.to/prisma/how-to-setup-a-free-postgresql-database-on-heroku-1dc1)
+
+## Smoke tests
+
+- [Github Action for curl](https://github.com/marketplace/actions/github-action-for-curl)
+- [Getting started with GitHub Actions](https://itnext.io/getting-started-with-github-actions-fe94167dbc6d)
+- [Using cURL with a username and password?](https://stackoverflow.com/questions/2594880/using-curl-with-a-username-and-password)
+- [How to capture a curl http status code in a GitHub Action to determine success/failure?](https://stackoverflow.com/questions/65728933/how-to-capture-a-curl-http-status-code-in-a-github-action-to-determine-success-f)
+- [Using GitHub actions for integration testing on a REST API](https://medium.com/weekly-webtips/using-github-actions-for-integration-testing-on-a-rest-api-358991d54a20)
 
 ## Coverage
 
