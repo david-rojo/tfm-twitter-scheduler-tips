@@ -12,6 +12,10 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 
  - [Design proposal](doc/design/design.md)
 
+## Next steps
+
+- Include Smoke Tests (test that check that application has been deployed properly), instead of checking it manually
+
 ## OpenApi
 
 - [SpringDoc-OpenApi v1.5.12 official doc](https://springdoc.org/)
