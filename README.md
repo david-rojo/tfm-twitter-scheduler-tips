@@ -89,8 +89,16 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 
 ## Tests
 
-- [Smoke tests](doc/test/smoke-test.md)
 - [Spring boot MockMVC example](https://howtodoinjava.com/spring-boot2/testing/spring-boot-mockmvc-example/)
+
+## Smoke tests
+
+- [Smoke tests](doc/test/smoke-test.md)
+- [Github Action for curl](https://github.com/marketplace/actions/github-action-for-curl)
+- [Getting started with GitHub Actions](https://itnext.io/getting-started-with-github-actions-fe94167dbc6d)
+- [Using cURL with a username and password?](https://stackoverflow.com/questions/2594880/using-curl-with-a-username-and-password)
+- [How to capture a curl http status code in a GitHub Action to determine success/failure?](https://stackoverflow.com/questions/65728933/how-to-capture-a-curl-http-status-code-in-a-github-action-to-determine-success-f)
+- [Using GitHub actions for integration testing on a REST API](https://medium.com/weekly-webtips/using-github-actions-for-integration-testing-on-a-rest-api-358991d54a20)
 
 ## Coverage
 
