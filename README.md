@@ -87,9 +87,14 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 
 - [How to set up a free PostgreSQL database on Heroku](https://dev.to/prisma/how-to-setup-a-free-postgresql-database-on-heroku-1dc1)
 
+## Tests
+
+- [Smoke tests](doc/test/smoke-test.md)
+- [Spring boot MockMVC example](https://howtodoinjava.com/spring-boot2/testing/spring-boot-mockmvc-example/)
+
 ## Coverage
 
- - [Jacoco configuration in the project](docs/springboot/jacoco.md)
+ - [Jacoco configuration in the project](doc/springboot/jacoco.md)
  - [GitHub Actions CI pipeline: GitHub Packages, Codecov, release to Maven Central & GitHub](https://blog.codecentric.de/en/2021/02/github-actions-pipeline/)
 
 ## Misc
