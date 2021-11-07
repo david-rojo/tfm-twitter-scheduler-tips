@@ -44,6 +44,8 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 ## Scheduled
 
 - [Spring scheduled tasks](doc/springboot/scheduled-tasks.md)
+- [Expressing fixedRateString and initialDelayString with Duration](https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true#parse-java.lang.CharSequence-)
+- [Baeldung: How to test @Scheduled annotation](https://www.baeldung.com/spring-testing-scheduled-annotation)
 
 ## Feature Flags
 
@@ -90,6 +92,8 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 ## Tests
 
 - [Spring boot MockMVC example](https://howtodoinjava.com/spring-boot2/testing/spring-boot-mockmvc-example/)
+- [Testing with Spring Boot and @SpringBootTest](https://reflectoring.io/spring-boot-test/)
+- [Baeldung: How to test @Scheduled annotation](https://www.baeldung.com/spring-testing-scheduled-annotation)
 
 ## Smoke tests
 
