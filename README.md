@@ -30,11 +30,18 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 
 - [Spring Boot Actuator is enabled in the project](doc/springboot/spring-boot-actuator.md)
 - [GitHub secret usage as property in Java code](doc/springboot/github-secret-usage-as-property.md)
+- [Spring Profiles](doc/springboot/profiles.md)
 
 ## H2 database
 
 - [Baeldung: Spring Boot With H2 Database](https://www.baeldung.com/spring-boot-h2-database)
 - [Add H2 Database to Spring Boot Project with Spring Security](https://www.appsdeveloperblog.com/add-h2-database-to-spring-boot-project-with-spring-security/)
+
+## Flyway
+
+- [Database Migrations with Flyway](https://www.baeldung.com/database-migrations-with-flyway)
+- [Build a Spring Boot App With Flyway and Postgres](https://dzone.com/articles/build-a-spring-boot-app-with-flyway-and-postgres)
+- Práctica 02-servicios-internet/03-persistencia-datos/practica-02
 
 ## Resilience
 
@@ -69,6 +76,9 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 - [Baeldung: Introduction to TwitterJ](https://www.baeldung.com/twitter4j)
 - [How to post image tweets to Twitter using Twitter4j Java API](https://roytuts.com/how-to-post-image-tweets-to-twitter-using-twitter4j-java-api/)
 - [Twitter4J](https://github.com/Twitter4J/Twitter4J)
+- Tweet url: `https://twitter.com/BlueOcean_TFM/status/1458162214926434316`
+    - `BlueOcean_TFM` is `user.getScreenName()`
+    - `1458162214926434316` is `status.getId()`
 
 ## Heroku
 
@@ -87,7 +97,9 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 
 ## Heroku DB
 
+- [Credentials issue in springboot](doc/springboot/heroku-credentials.md)
 - [How to set up a free PostgreSQL database on Heroku](https://dev.to/prisma/how-to-setup-a-free-postgresql-database-on-heroku-1dc1)
+- *[Spring how to limit db connections](https://stackoverflow.com/questions/47141176/spring-boot-psqlexception-fatal-sorry-too-many-clients-already-when-running)
 
 ## Tests
 
@@ -106,8 +118,11 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 
 ## Coverage
 
- - [Jacoco configuration in the project](doc/springboot/jacoco.md)
- - [GitHub Actions CI pipeline: GitHub Packages, Codecov, release to Maven Central & GitHub](https://blog.codecentric.de/en/2021/02/github-actions-pipeline/)
+- [Jacoco configuration in the project](doc/springboot/jacoco.md)
+- [GitHub Actions CI pipeline: GitHub Packages, Codecov, release to Maven Central & GitHub](https://blog.codecentric.de/en/2021/02/github-actions-pipeline/)
+- **[HOWTO SONARQUBE: Continuous Integration of Java project with GitHub Actions](https://faun.pub/continuous-integration-of-java-project-with-github-actions-7a8a0e8246ef)
+  - [github repo](https://github.com/wkrzywiec/NoticeBoard)
+
 
 ## Misc
 
