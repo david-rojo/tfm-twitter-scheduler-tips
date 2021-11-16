@@ -101,11 +101,15 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 - [How to set up a free PostgreSQL database on Heroku](https://dev.to/prisma/how-to-setup-a-free-postgresql-database-on-heroku-1dc1)
 - *[Spring how to limit db connections](https://stackoverflow.com/questions/47141176/spring-boot-psqlexception-fatal-sorry-too-many-clients-already-when-running)
 
-## Tests
+## Unitary Tests
 
 - [Spring boot MockMVC example](https://howtodoinjava.com/spring-boot2/testing/spring-boot-mockmvc-example/)
 - [Testing with Spring Boot and @SpringBootTest](https://reflectoring.io/spring-boot-test/)
 - [Baeldung: How to test @Scheduled annotation](https://www.baeldung.com/spring-testing-scheduled-annotation)
+
+## Integration Tests
+
+- [Integration testing](doc/springboot/integration-testing.md)
 
 ## Smoke tests
 

@@ -5,7 +5,9 @@
 - Togglz used for feature toggles instead of FF4J
 - Smoke tests
 - Postgre/Flyway
-- Profiles: TEST/PRO
+- Profiles: STANDALONE/PRO
+- Integration tests
+- Publish scheduled only text tweets
 
 ## Questions/Issues
 
