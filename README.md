@@ -6,7 +6,7 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 
 - [22/07/2021: Kickoff](doc/meetings/20210722-kickoff.md)
 - [29/10/2021: Follow Up](doc/meetings/20211029-followup.md)
-- [11/2021: Follow up](doc/meetings/202111-followup.md)
+- [19/11/2021: Follow up](doc/meetings/20211119-followup.md)
 
 ## Project documentation
 
@@ -116,6 +116,10 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 ## Integration Tests
 
 - [Integration testing](doc/springboot/integration-testing.md)
+- [How to create JSON for integration tests with spring-data-rest and MockMvc](https://stackoverflow.com/questions/41725219/how-to-create-json-for-integration-tests-with-spring-data-rest-and-mockmvc)
+- [ImmutableMap class from Guava](https://guava.dev/releases/snapshot/api/docs/com/google/common/collect/ImmutableMap.html)
+- [Guava dependency](https://mvnrepository.com/artifact/com.google.guava/guava/31.0.1-jre)
+
 
 ## Smoke tests
 
