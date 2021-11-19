@@ -11,6 +11,7 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 ## Project documentation
 
  - [Design proposal](doc/design/design.md)
+ - [v1](doc/design/v1.md)
 
 ## OpenApi
 
