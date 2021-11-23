@@ -1,6 +1,6 @@
 # Refactor: publish on demand
 
-## Add new feature toggle
+## Add new feature toggle disabled
 
 On `Features.java` add new feature toggle:
 
@@ -27,7 +27,7 @@ ADD PUBLICATION_TYPE varchar(255) DEFAULT 'SCHEDULED' NOT NULL
 As it is described [here](https://www.baeldung.com/spring-swagger-hiding-endpoints#hiding-an-endpoint-with-hidden), any REST method can be hidden using `@Hidden` annotation when OpenApi v3 is used:
 
 ```
-@Hidden
+	@Hidden
 	@Operation(
 			summary = "Publish a pending tweet immediately", 
 			description = "Publish a pending tweet immediately", 
@@ -96,6 +96,14 @@ Set SCHEDULED value when service needs to persist new Tweet:
 
 Adapt unitary tests TweetTest in order to take this change in account
 
+Add publicationType to TweetResponse as attribute and also to TweetResponseMapper:
+
+```
+	private String mapPublicationType(final Tweet request) {
+		
+		return request.publicationType().name();
+	}
+```
 
 ## Add PublishPendingTweetOnDemand useCase definition
 
@@ -147,8 +155,114 @@ Implement service in PublisherService
 
 ## Add publicationType to controller
 
+Controller implementation:
+
+```
+	@PostMapping("/{id}/publish")
+	public ResponseEntity<PublishOnDemandResponse> publishOnDemand(Long id) {
+		
+		if (!featureManager.isActive(Features.PUBLISH_ON_DEMAND)) {
+			logger.info("Publish on demand feature is disabled");
+			return new ResponseEntity<>(null, HttpStatus.METHOD_NOT_ALLOWED);
+		}
+		else {
+			
+			final var operation = publishPendingTweetOnDemandRequestMapper.mapRequest(id);
+			
+			final var useCaseResponse = publishPendingTweetOnDemandUseCase
+					.publishImmediatly(operation);
+			
+			if (useCaseResponse.isPresent()) {
+				return new ResponseEntity<>(publishOnDemandResponseMapper
+						.mapResponse(useCaseResponse.get()), HttpStatus.OK);
+			} else {
+				return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+			}
+		}
+	}
+```
+
+
+Unitary tests:
+
+```
+@Test
+	@DisplayName("Publish on demand pending tweet when feature active and pending doesn't exist, expect not found")
+	void publishOnDemandNotExistingPendingTweetWhenFeatureActiveTest() throws Exception {
+
+		when(featureManager.isActive(Mockito.any()))
+			.thenReturn(true);
+		
+		when(publishPendingTweetOnDemandUseCase.publishImmediatly(any()))
+			.thenReturn(Optional.empty());
+
+		mvc.perform(
+				post("/api/pending/" + pendingTweet.id().id() + "/publish")
+				.contentType(MediaType.APPLICATION_JSON))
+		.andExpect(status().isNotFound());
+	}
+	
+	@Test
+	@DisplayName("Publish on demand pending tweet when feature active and pending exist, expect OK")
+	void publishOnDemandExistingPendingTweetWhenFeatureActiveTest() throws Exception {
+
+		when(featureManager.isActive(Mockito.any()))
+			.thenReturn(true);
+		
+		when(publishPendingTweetOnDemandUseCase.publishImmediatly(any()))
+			.thenReturn(Optional.of(onDemandTweet));
+
+		mvc.perform(
+				post("/api/pending/" + pendingTweet.id().id() + "/publish")
+				.contentType(MediaType.APPLICATION_JSON))
+		.andExpect(status().isOk())
+		.andExpect(jsonPath("$.tweetId", equalTo(Math.toIntExact(onDemandTweet.id().id()))));
+	}
+```
 ## Enable feature toggle
+
+In Features enum, include @EnabledByDefault annotation for PUBLISH_ON_DEMAND feature:
+
+```
+	@EnabledByDefault
+	@Label("Publish on demand")
+	PUBLISH_ON_DEMAND
+```
+
+![on-demand-enabled](../img/refactor-on-demand/publish-on-demand-togglz-enabled.png)
+
+Delete IT that check that publishOnDemand return 405 httpCode
 
 ## Show method in OpenApi
 
+Remove `@Hidden` annotation from REST endpoint:
+
+```
+	@Operation(
+			summary = "Publish a pending tweet immediately", 
+			description = "Publish a pending tweet immediately", 
+			tags = { "pending" })
+    @ApiResponses(value = { 
+        @ApiResponse(responseCode = "200", description = "pending tweet successfully published",
+                content = @Content(schema = @Schema(implementation = PublishOnDemandResponse.class))),
+        @ApiResponse(responseCode = "404", description = "pending tweet not found"),
+        @ApiResponse(responseCode = "405", description = "Feature in progress") })
+	public ResponseEntity<PublishOnDemandResponse> publishOnDemand(@PathVariable Long id);
+```
+![on-demand-rest-method](../img/refactor-on-demand/publish-on-demand-rest-method.png)
+
+Tests:
+ - to enable/disable (405 code when feature toggle disabled)
+ - try to publish an not existing pending tweet id (404)
+ - try to publish an existing pending tweet id (200)
+
 ## Remove feature toggle
+
+- Remove PUBLISH_ON_DEMAND feature toggle in Features enum
+- Remove check feature toggle in pendingApiController
+- Remove featureManager attribute in pendingApiController
+- Remove featureManager attribute in pendingApiControllerTest
+
+## Commits
+
+![on-demand-commits](../img/refactor-on-demand/commits-on-demand.png)
