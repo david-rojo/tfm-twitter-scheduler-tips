@@ -12,6 +12,7 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 
  - [Design proposal](doc/design/design.md)
  - [v1](doc/design/v1.md)
+ - [Refactor: publish on demand](/doc/design/refactor-publish-on-demand.md)
 
 ## OpenApi
 
@@ -19,6 +20,7 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 - [OpenApi securization](doc/openapi/openapi-securization.md)
 - [Baeldung: How to Turn Off Swagger-ui in Production](https://www.baeldung.com/swagger-ui-turn-off-in-production)
 - [Sort endpoints alphabetically](https://springdoc.org/index.html#how-can-i-sort-endpoints-alphabetically)
+- [Baeldung: Hiding Endpoints From Swagger Documentation in Spring Boot](https://www.baeldung.com/spring-swagger-hiding-endpoints)
 
 ## DDD
 
@@ -43,6 +45,7 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 
 - [Baeldung: Spring Boot With H2 Database](https://www.baeldung.com/spring-boot-h2-database)
 - [Add H2 Database to Spring Boot Project with Spring Security](https://www.appsdeveloperblog.com/add-h2-database-to-spring-boot-project-with-spring-security/)
+- [Baeldung: Persisting Enums in JPA](https://www.baeldung.com/jpa-persisting-enums-in-jpa)
 
 ## Flyway
 
@@ -71,6 +74,7 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 - [configuration](https://www.togglz.org/documentation/configuration.html)
 - [StackOverflow: Spring Boot Togglz - no qualifying bean of type UserProvider error](https://stackoverflow.com/questions/41263339/spring-boot-togglz-no-qualifying-bean-of-type-userprovider-error)
 - [StackOverflow: How to enable togglz-console in spring-boot application](https://stackoverflow.com/questions/36352832/how-to-enable-togglz-console-in-spring-boot-application)
+- [Togglz - Feature Toggles pattern for Java (Spring)](https://medium.com/@AADota/togglz-feature-toggles-pattern-for-java-spring-25142990c224)
 
 ### FFJ4
 
