@@ -70,12 +70,85 @@ As it is described [here](https://www.baeldung.com/jpa-persisting-enums-in-jpa#s
 	private PublicationType publicationType;
 ```
 
-## Add publicationType to domain
+## Add publicationType to domain and adapt current implementation
 
-## Add publicationType to service
+Add new attribute in Tweet class:
+
+```
+private PublicationType publicationType;
+```
+
+Set SCHEDULED value when service needs to persist new Tweet:
+
+- PublisherService.publishPending
+
+```
+				tweetPort.create(Tweet.builder()
+						.id(published.getId())
+						.message(published.getMessage())
+						.url(published.getUrl())
+						.requestedPublicationDate(pending.publicationDate().instant())
+						.publishedAt(published.getPublishedAt())
+						.createdAt(NullableInstant.now().instant())
+						.publicationType(PublicationType.SCHEDULED)
+						.build());	
+```
+
+Adapt unitary tests TweetTest in order to take this change in account
+
+
+## Add PublishPendingTweetOnDemand useCase definition
+
+```
+public interface PublishPendingTweetOnDemandUseCase {
+
+	public Optional<Tweet> publishImmediatly(PublishPendingTweetOnDemandOperation operation);
+}
+```
+
+## Add PublishPendingTweetOnDemand service implementation
+
+Implement service in PublisherService
+
+```
+	@Override
+	public Optional<Tweet> publishImmediatly(PublishPendingTweetOnDemandOperation operation) {
+
+		final var pending = pendingTweetPort.findOne(operation.getId());
+
+		if (pending.isPresent()) {
+
+			logger.info("Found pending tweet with id = " + pending.get().id() + " to publish on demand");
+			final var publishedTweet = twitterService.publish(PublishTweetRequest.builder()
+					.message(pending.get().message().message())
+					.build());
+
+			logger.info("Successful on demand publication for pending tweet with id = " + pending.get().id().id());
+			if (publishedTweet.isPresent()) {
+
+				pendingTweetPort.delete(pending.get().id().id());
+
+				final var tweet = tweetPort.create(Tweet.builder()
+						.id(publishedTweet.get().getId())
+						.message(publishedTweet.get().getMessage())
+						.url(publishedTweet.get().getUrl())
+						.requestedPublicationDate(pending.get().publicationDate().instant())
+						.publishedAt(publishedTweet.get().getPublishedAt())
+						.createdAt(NullableInstant.now().instant())
+						.publicationType(PublicationType.ON_DEMAND)
+						.build());
+
+				return Optional.of(tweet);
+			}		
+		}
+		return Optional.empty();
+	}
+```
 
 ## Add publicationType to controller
 
 ## Enable feature toggle
+
+## Show method in OpenApi
 
 ## Remove feature toggle
