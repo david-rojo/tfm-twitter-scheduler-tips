@@ -47,6 +47,7 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 - [Add H2 Database to Spring Boot Project with Spring Security](https://www.appsdeveloperblog.com/add-h2-database-to-spring-boot-project-with-spring-security/)
 - [Baeldung: Persisting Enums in JPA](https://www.baeldung.com/jpa-persisting-enums-in-jpa)
 - [Baeldung: Hibernate One to Many Annotation Tutorial](https://www.baeldung.com/hibernate-one-to-many)
+- [Example OneToMany Spring](https://github.com/MasterCloudApps/2.3.Persistencia-y-analisis-de-datos/tree/master/tema1/ejemplo2_springdata_one_to_many)
 
 ## Flyway
 
