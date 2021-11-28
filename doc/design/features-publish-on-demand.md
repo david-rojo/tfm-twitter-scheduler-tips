@@ -1,4 +1,4 @@
-# Refactor: publish on demand
+# Feature: publish on demand
 
 ## Add new feature toggle disabled
 
@@ -11,7 +11,7 @@ On `Features.java` add new feature toggle:
 
 It is disabled by default
 
-![on-demand-disabled](../img/refactor-on-demand/publish-on-demand-togglz-disabled.png)
+![on-demand-disabled](../img/feature-on-demand/publish-on-demand-togglz-disabled.png)
 
 ## Add V2 flyway script
 
@@ -42,7 +42,7 @@ As it is described [here](https://www.baeldung.com/spring-swagger-hiding-endpoin
 
 But method is reachable as it is shown:
 
-![on-demand-disabled](../img/refactor-on-demand/publish-on-demand-controller-toggle-disabled.png)
+![on-demand-disabled](../img/feature-on-demand/publish-on-demand-controller-toggle-disabled.png)
 
 Tests added:
 
@@ -229,7 +229,7 @@ In Features enum, include @EnabledByDefault annotation for PUBLISH_ON_DEMAND fea
 	PUBLISH_ON_DEMAND
 ```
 
-![on-demand-enabled](../img/refactor-on-demand/publish-on-demand-togglz-enabled.png)
+![on-demand-enabled](../img/feature-on-demand/publish-on-demand-togglz-enabled.png)
 
 Delete IT that check that publishOnDemand return 405 httpCode
 
@@ -249,7 +249,7 @@ Remove `@Hidden` annotation from REST endpoint:
         @ApiResponse(responseCode = "405", description = "Feature in progress") })
 	public ResponseEntity<PublishOnDemandResponse> publishOnDemand(@PathVariable Long id);
 ```
-![on-demand-rest-method](../img/refactor-on-demand/publish-on-demand-rest-method.png)
+![on-demand-rest-method](../img/feature-on-demand/publish-on-demand-rest-method.png)
 
 Tests:
  - to enable/disable (405 code when feature toggle disabled)
@@ -265,4 +265,4 @@ Tests:
 
 ## Commits
 
-![on-demand-commits](../img/refactor-on-demand/commits-on-demand.png)
+![on-demand-commits](../img/feature-on-demand/commits-on-demand.png)
