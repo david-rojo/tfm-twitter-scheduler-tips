@@ -34,3 +34,5 @@ It is disabled by default
   ]
 }
 ```
+
+![tweet-images-enabled](../img/feature-tweet-images/tweet-images-togglz-enabled.png)
