@@ -19,3 +19,18 @@ It is disabled by default
 - **CreatePendingTweetRequestMapper.mapRequest(final PendingTweetRequest request)**: when a request to create a pending tweet is received
 - **PendingTweetResponseMapper.mapResponse(PendingTweet pendingTweet)**: when a pending tweet response is built. Called in the response when a pending tweet is created, when it is searched by ID and when all pending tweets are requested. 
 - **TweetResponseMapper.mapResponse(Tweet tweet)**: when a tweet response is built. Called from getTweets and getTweetById
+
+```
+{
+  "message": "This is a test tweet 14:07 28/11",
+  "publicationDate": "2022-04-01T10:00:00Z",
+  "images": [
+    {
+      "url": "https://davidrojo.eu/images/tfm/1.jpg"
+    },
+    {
+      "url": "https://davidrojo.eu/images/tfm/2.jpg"
+    }
+  ]
+}
+```
