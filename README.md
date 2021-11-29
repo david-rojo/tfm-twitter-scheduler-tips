@@ -7,6 +7,7 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
 - [22/07/2021: Kickoff](doc/meetings/20210722-kickoff.md)
 - [29/10/2021: Follow Up](doc/meetings/20211029-followup.md)
 - [19/11/2021: Follow up](doc/meetings/20211119-followup.md)
+- [29/11/2021: Follow up](doc/meetings/20211129-followup.md)
 
 ## Project documentation
 
