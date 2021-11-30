@@ -15,6 +15,7 @@ Heroku info endpoint: [https://twitter-scheduler-tfm.herokuapp.com/actuator/info
  - [v1](doc/design/v1.md)
  - [Feature: publish on demand](/doc/design/feature-publish-on-demand.md)
  - [Feature: tweets with images](/doc/design/feature-tweets-with-images.md)
+ - [Project documentation preparation tips](/doc/design/project-documentation.md)
 
 ## OpenApi
 
